@@ -1,0 +1,362 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0721.1350                               -->
+<datasource formatted-name='federated.1q7e22a12w16b313vj1tx0lw6ia4' inline='true' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+  </document-format-change-manifest>
+  <connection class='federated'>
+    <named-connections>
+      <named-connection caption='match' name='textscan.1qpfzuh1dd9gx8102g89v0a5m97a'>
+        <connection class='textscan' directory='C:/Midia/GitHub/bandeirantes/data/analysis/match' filename='match.csv' password='' server='' workgroup-auth-mode='as-is' />
+      </named-connection>
+    </named-connections>
+    <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1qpfzuh1dd9gx8102g89v0a5m97a' name='match.csv' table='[match#csv]' type='table'>
+      <columns character-set='UTF-8' header='yes' locale='pt_BR' separator=';'>
+        <column datatype='string' name='match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state' ordinal='0' />
+      </columns>
+    </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+    <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1qpfzuh1dd9gx8102g89v0a5m97a' name='match.csv' table='[match#csv]' type='table'>
+      <columns character-set='UTF-8' header='yes' locale='pt_BR' separator=';'>
+        <column datatype='string' name='match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state' ordinal='0' />
+      </columns>
+    </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+    <metadata-records>
+      <metadata-record class='capability'>
+        <remote-name />
+        <remote-type>0</remote-type>
+        <parent-name>[match.csv]</parent-name>
+        <remote-alias />
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+          <attribute datatype='string' name='collation'>&quot;pt_BR&quot;</attribute>
+          <attribute datatype='string' name='currency'>&quot;R$&quot;</attribute>
+          <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+          <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+          <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+          <attribute datatype='string' name='locale'>&quot;pt_BR&quot;</attribute>
+          <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+          <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state]</local-name>
+        <parent-name>[match.csv]</parent-name>
+        <remote-alias>match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state</remote-alias>
+        <ordinal>0</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LPT_RBR' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[match.csv_620310AD3A0B4C09AA722740D49BEDB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+    </metadata-records>
+  </connection>
+  <aliases enabled='yes' />
+  <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+    <aliases>
+      <alias key='&quot;[federated.1q7e22a12w16b313vj1tx0lw6ia4].[cnt:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 6:qk]&quot;' value='Frequência a.' />
+      <alias key='&quot;[federated.1q7e22a12w16b313vj1tx0lw6ia4].[ctd:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3:qk]&quot;' value='Bandeirantes com logradouros associados' />
+      <alias key='&quot;[federated.1q7e22a12w16b313vj1tx0lw6ia4].[cum:cnt:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 6:qk]&quot;' value='Frequência a. ac.' />
+      <alias key='&quot;[federated.1q7e22a12w16b313vj1tx0lw6ia4].[pcto:ctd:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3:qk]&quot;' value='Frequência relativa' />
+      <alias key='&quot;[federated.1q7e22a12w16b313vj1tx0lw6ia4].[usr:Calculation_154811246899470344:qk]&quot;' value='Média de logradouros por bandeirante' />
+      <alias key='&quot;[federated.1q7e22a12w16b313vj1tx0lw6ia4].[usr:Calculation_154811246904107028:qk]&quot;' value='Frequência p.' />
+      <alias key='&quot;[federated.1q7e22a12w16b313vj1tx0lw6ia4].[usr:Calculation_154811246904422422:qk]&quot;' value='Frequência p.  ac.' />
+      <alias key='&quot;[federated.1q7e22a12w16b313vj1tx0lw6ia4].[usr:Calculation_154811246904754200:qk]&quot;' value='Ranque' />
+      <alias key='&quot;[federated.1q7e22a12w16b313vj1tx0lw6ia4].[usr:Calculation_154811246916280367:qk]&quot;' value='Média de logradouros por estado' />
+      <alias key='&quot;[federated.1q7e22a12w16b313vj1tx0lw6ia4].[usr:Calculation_154811246916325424:qk]&quot;' value='Média de logradouros por cidade' />
+    </aliases>
+  </column>
+  <_.fcp.ObjectModelTableType.true...column caption='match.csv' datatype='table' name='[__tableau_internal_object_id__].[match.csv_620310AD3A0B4C09AA722740D49BEDB0]' role='measure' type='quantitative' />
+  <column caption='match_id' datatype='integer' datatype-customized='true' name='[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 1]' role='dimension' semantic-role='[City].[Name]' type='ordinal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1q7e22a12w16b313vj1tx0lw6ia4].[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state]'>
+    <calculation class='tableau' formula='INT(TRIM( SPLIT( [match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state], &quot;,&quot;, 1 ) ))' />
+  </column>
+  <column caption='bandeirante_id' datatype='integer' datatype-customized='true' name='[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 2]' role='dimension' semantic-role='[City].[Name]' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.1q7e22a12w16b313vj1tx0lw6ia4].[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state]'>
+    <calculation class='tableau' formula='INT(TRIM( SPLIT( [match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state], &quot;,&quot;, 2 ) ))' />
+  </column>
+  <column caption='name' datatype='string' name='[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3]' role='dimension' semantic-role='[City].[Name]' type='nominal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.1q7e22a12w16b313vj1tx0lw6ia4].[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state]'>
+    <calculation class='tableau' formula='TRIM( SPLIT( [match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state], &quot;,&quot;, 3 ) )' />
+  </column>
+  <column caption='street_type' datatype='string' name='[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 4]' role='dimension' semantic-role='[City].[Name]' type='nominal' user:SplitFieldIndex='4' user:SplitFieldOrigin='[federated.1q7e22a12w16b313vj1tx0lw6ia4].[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state]'>
+    <calculation class='tableau' formula='TRIM( SPLIT( [match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state], &quot;,&quot;, 4 ) )' />
+  </column>
+  <column caption='street_name' datatype='string' name='[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 5]' role='dimension' semantic-role='[City].[Name]' type='nominal' user:SplitFieldIndex='5' user:SplitFieldOrigin='[federated.1q7e22a12w16b313vj1tx0lw6ia4].[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state]'>
+    <calculation class='tableau' formula='TRIM( SPLIT( [match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state], &quot;,&quot;, 5 ) )' />
+  </column>
+  <column caption='street' datatype='string' name='[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 6]' role='dimension' semantic-role='[City].[Name]' type='nominal' user:SplitFieldIndex='6' user:SplitFieldOrigin='[federated.1q7e22a12w16b313vj1tx0lw6ia4].[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state]'>
+    <calculation class='tableau' formula='TRIM( SPLIT( [match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state], &quot;,&quot;, 6 ) )' />
+  </column>
+  <column caption='city' datatype='string' name='[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 7]' role='dimension' semantic-role='[City].[Name]' type='nominal' user:SplitFieldIndex='7' user:SplitFieldOrigin='[federated.1q7e22a12w16b313vj1tx0lw6ia4].[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state]'>
+    <calculation class='tableau' formula='TRIM( SPLIT( [match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state], &quot;,&quot;, 7 ) )' />
+  </column>
+  <column caption='uf' datatype='string' name='[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 8]' role='dimension' semantic-role='[State].[Name]' type='nominal' user:SplitFieldIndex='8' user:SplitFieldOrigin='[federated.1q7e22a12w16b313vj1tx0lw6ia4].[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state]'>
+    <calculation class='tableau' formula='TRIM( SPLIT( [match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state], &quot;,&quot;, 8 ) )' />
+  </column>
+  <column caption='state' datatype='string' name='[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 9]' role='dimension' semantic-role='[State].[Name]' type='nominal' user:SplitFieldIndex='9' user:SplitFieldOrigin='[federated.1q7e22a12w16b313vj1tx0lw6ia4].[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state]'>
+    <calculation class='tableau' formula='TRIM( SPLIT( [match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state], &quot;,&quot;, 9 ) )' />
+  </column>
+  <column caption='Match Id,Bandeirante Id,Name,Street Type,Street Name,Street,City,Uf,State' datatype='string' hidden='true' name='[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+  <column-instance column='[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3]' derivation='Count' name='[cnt:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3:qk]' pivot='key' type='quantitative' />
+  <column-instance column='[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 6]' derivation='Count' name='[cnt:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 6:qk]' pivot='key' type='quantitative' />
+  <column-instance column='[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3]' derivation='CountD' name='[ctd:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3:qk]' pivot='key' type='quantitative' />
+  <column-instance column='[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3]' derivation='Count' name='[cum:cnt:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3:qk]' pivot='key' type='quantitative'>
+    <table-calc aggregation='Sum' ordering-type='Columns' type='CumTotal' />
+  </column-instance>
+  <column-instance column='[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 6]' derivation='Count' name='[cum:cnt:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 6:qk]' pivot='key' type='quantitative'>
+    <table-calc aggregation='Sum' ordering-type='Columns' type='CumTotal' />
+  </column-instance>
+  <column-instance column='[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3]' derivation='Count' name='[diff:cnt:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3:qk:2]' pivot='key' type='quantitative'>
+    <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+      <address>
+        <value>-1</value>
+      </address>
+    </table-calc>
+  </column-instance>
+  <column-instance column='[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3]' derivation='Count' name='[diff:cnt:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3:qk]' pivot='key' type='quantitative'>
+    <table-calc diff-options='Relative' ordering-type='Columns' type='Difference'>
+      <address>
+        <value>-1</value>
+      </address>
+    </table-calc>
+  </column-instance>
+  <column-instance column='[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3]' derivation='None' name='[none:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3:nk]' pivot='key' type='nominal' />
+  <column-instance column='[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 8]' derivation='None' name='[none:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 8:nk]' pivot='key' type='nominal' />
+  <column-instance column='[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 9]' derivation='None' name='[none:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 9:nk]' pivot='key' type='nominal' />
+  <column-instance column='[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3]' derivation='Count' name='[pcto:cnt:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3:qk:5]' pivot='key' type='quantitative'>
+    <table-calc ordering-type='CellInPane' type='PctTotal' />
+  </column-instance>
+  <column-instance column='[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3]' derivation='Count' name='[pcto:cnt:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3:qk]' pivot='key' type='quantitative'>
+    <table-calc ordering-type='Columns' type='PctTotal' />
+  </column-instance>
+  <column-instance column='[match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3]' derivation='CountD' name='[pcto:ctd:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3:qk]' pivot='key' type='quantitative'>
+    <table-calc ordering-type='Columns' type='PctTotal' />
+  </column-instance>
+  <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+  <style>
+    <style-rule element='mark'>
+      <encoding attr='color' field='[none:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 8:nk]' type='palette'>
+        <map to='#499894'>
+          <bucket>&quot;MA&quot;</bucket>
+        </map>
+        <map to='#4e79a7'>
+          <bucket>&quot;AC&quot;</bucket>
+        </map>
+        <map to='#4e79a7'>
+          <bucket>&quot;RR&quot;</bucket>
+        </map>
+        <map to='#59a14f'>
+          <bucket>&quot;BA&quot;</bucket>
+        </map>
+        <map to='#59a14f'>
+          <bucket>&quot;SP&quot;</bucket>
+        </map>
+        <map to='#79706e'>
+          <bucket>&quot;PA&quot;</bucket>
+        </map>
+        <map to='#86bcb6'>
+          <bucket>&quot;MG&quot;</bucket>
+        </map>
+        <map to='#8cd17d'>
+          <bucket>&quot;CE&quot;</bucket>
+        </map>
+        <map to='#8cd17d'>
+          <bucket>&quot;TO&quot;</bucket>
+        </map>
+        <map to='#9d7660'>
+          <bucket>&quot;RN&quot;</bucket>
+        </map>
+        <map to='#a0cbe8'>
+          <bucket>&quot;AL&quot;</bucket>
+        </map>
+        <map to='#a0cbe8'>
+          <bucket>&quot;RS&quot;</bucket>
+        </map>
+        <map to='#b07aa1'>
+          <bucket>&quot;PR&quot;</bucket>
+        </map>
+        <map to='#b6992d'>
+          <bucket>&quot;ES&quot;</bucket>
+        </map>
+        <map to='#bab0ac'>
+          <bucket>&quot;PB&quot;</bucket>
+        </map>
+        <map to='#d37295'>
+          <bucket>&quot;PE&quot;</bucket>
+        </map>
+        <map to='#d4a6c8'>
+          <bucket>&quot;RJ&quot;</bucket>
+        </map>
+        <map to='#d7b5a6'>
+          <bucket>&quot;RO&quot;</bucket>
+        </map>
+        <map to='#e15759'>
+          <bucket>&quot;MS&quot;</bucket>
+        </map>
+        <map to='#f1ce63'>
+          <bucket>&quot;GO&quot;</bucket>
+        </map>
+        <map to='#f28e2b'>
+          <bucket>&quot;AM&quot;</bucket>
+        </map>
+        <map to='#f28e2b'>
+          <bucket>&quot;SC&quot;</bucket>
+        </map>
+        <map to='#fabfd2'>
+          <bucket>&quot;PI&quot;</bucket>
+        </map>
+        <map to='#ff9d9a'>
+          <bucket>&quot;MT&quot;</bucket>
+        </map>
+        <map to='#ffbe7d'>
+          <bucket>&quot;AP&quot;</bucket>
+        </map>
+        <map to='#ffbe7d'>
+          <bucket>&quot;SE&quot;</bucket>
+        </map>
+      </encoding>
+      <encoding attr='color' field='[none:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 9:nk]' type='palette'>
+        <map to='#499894'>
+          <bucket>&quot;MARANHÃO&quot;</bucket>
+        </map>
+        <map to='#4e79a7'>
+          <bucket>&quot;ACRE&quot;</bucket>
+        </map>
+        <map to='#4e79a7'>
+          <bucket>&quot;RONDÔNIA&quot;</bucket>
+        </map>
+        <map to='#59a14f'>
+          <bucket>&quot;BAHIA&quot;</bucket>
+        </map>
+        <map to='#59a14f'>
+          <bucket>&quot;SERGIPE&quot;</bucket>
+        </map>
+        <map to='#79706e'>
+          <bucket>&quot;PARÁ&quot;</bucket>
+        </map>
+        <map to='#86bcb6'>
+          <bucket>&quot;MATO GROSSO&quot;</bucket>
+        </map>
+        <map to='#8cd17d'>
+          <bucket>&quot;CEARÁ&quot;</bucket>
+        </map>
+        <map to='#8cd17d'>
+          <bucket>&quot;TOCANTINS&quot;</bucket>
+        </map>
+        <map to='#9d7660'>
+          <bucket>&quot;RIO GRANDE DO NORTE&quot;</bucket>
+        </map>
+        <map to='#a0cbe8'>
+          <bucket>&quot;ALAGOAS&quot;</bucket>
+        </map>
+        <map to='#a0cbe8'>
+          <bucket>&quot;RORAIMA&quot;</bucket>
+        </map>
+        <map to='#b07aa1'>
+          <bucket>&quot;PIAUÍ&quot;</bucket>
+        </map>
+        <map to='#b6992d'>
+          <bucket>&quot;ESPÍRITO SANTO&quot;</bucket>
+        </map>
+        <map to='#bab0ac'>
+          <bucket>&quot;PARAÍBA&quot;</bucket>
+        </map>
+        <map to='#d37295'>
+          <bucket>&quot;PARANÁ&quot;</bucket>
+        </map>
+        <map to='#d4a6c8'>
+          <bucket>&quot;RIO DE JANEIRO&quot;</bucket>
+        </map>
+        <map to='#d7b5a6'>
+          <bucket>&quot;RIO GRANDE DO SUL&quot;</bucket>
+        </map>
+        <map to='#e15759'>
+          <bucket>&quot;MATO GROSSO DO SUL&quot;</bucket>
+        </map>
+        <map to='#f1ce63'>
+          <bucket>&quot;GOIÁS&quot;</bucket>
+        </map>
+        <map to='#f28e2b'>
+          <bucket>&quot;AMAPÁ&quot;</bucket>
+        </map>
+        <map to='#f28e2b'>
+          <bucket>&quot;SANTA CATARINA&quot;</bucket>
+        </map>
+        <map to='#fabfd2'>
+          <bucket>&quot;PERNAMBUCO&quot;</bucket>
+        </map>
+        <map to='#ff9d9a'>
+          <bucket>&quot;MINAS GERAIS&quot;</bucket>
+        </map>
+        <map to='#ffbe7d'>
+          <bucket>&quot;AMAZONAS&quot;</bucket>
+        </map>
+        <map to='#ffbe7d'>
+          <bucket>&quot;SÃO PAULO&quot;</bucket>
+        </map>
+      </encoding>
+      <encoding attr='color' field='[:Measure Names]' type='palette'>
+        <map to='#4e79a7'>
+          <bucket>&quot;[federated.1q7e22a12w16b313vj1tx0lw6ia4].[pcto:cnt:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3:qk:5]&quot;</bucket>
+        </map>
+        <map to='#4e79a7'>
+          <bucket>&quot;[federated.1q7e22a12w16b313vj1tx0lw6ia4].[pcto:cnt:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3:qk]&quot;</bucket>
+        </map>
+        <map to='#f28e2b'>
+          <bucket>&quot;[federated.1q7e22a12w16b313vj1tx0lw6ia4].[cnt:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3:qk]&quot;</bucket>
+        </map>
+        <map to='#f28e2b'>
+          <bucket>&quot;[federated.1q7e22a12w16b313vj1tx0lw6ia4].[cnt:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 6:qk]&quot;</bucket>
+        </map>
+        <map to='#f28e2b'>
+          <bucket>&quot;[federated.1q7e22a12w16b313vj1tx0lw6ia4].[ctd:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3:qk]&quot;</bucket>
+        </map>
+        <map to='#f28e2b'>
+          <bucket>&quot;[federated.1q7e22a12w16b313vj1tx0lw6ia4].[cum:cnt:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3:qk]&quot;</bucket>
+        </map>
+        <map to='#f28e2b'>
+          <bucket>&quot;[federated.1q7e22a12w16b313vj1tx0lw6ia4].[diff:cnt:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3:qk:2]&quot;</bucket>
+        </map>
+        <map to='#f28e2b'>
+          <bucket>&quot;[federated.1q7e22a12w16b313vj1tx0lw6ia4].[diff:cnt:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3:qk]&quot;</bucket>
+        </map>
+        <map to='#f28e2b'>
+          <bucket>&quot;[federated.1q7e22a12w16b313vj1tx0lw6ia4].[none:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3:nk]&quot;</bucket>
+        </map>
+        <map to='#f28e2b'>
+          <bucket>&quot;[federated.1q7e22a12w16b313vj1tx0lw6ia4].[pcto:ctd:match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state - Divisão 3:qk]&quot;</bucket>
+        </map>
+        <map to='#f28e2b'>
+          <bucket>&quot;[federated.1q7e22a12w16b313vj1tx0lw6ia4].[pcto:usr:Calculation_154811246903439376:qk]&quot;</bucket>
+        </map>
+        <map to='#f28e2b'>
+          <bucket>&quot;[federated.1q7e22a12w16b313vj1tx0lw6ia4].[usr:Calculation_154811246903439376:qk]&quot;</bucket>
+        </map>
+      </encoding>
+    </style-rule>
+  </style>
+  <semantic-values>
+    <semantic-value key='[Country].[Name]' value='&quot;Brazil&quot;' />
+  </semantic-values>
+  <date-options start-of-week='monday' />
+  <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    <objects>
+      <object caption='match.csv' id='match.csv_620310AD3A0B4C09AA722740D49BEDB0'>
+        <properties context=''>
+          <relation connection='textscan.1qpfzuh1dd9gx8102g89v0a5m97a' name='match.csv' table='[match#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='pt_BR' separator=';'>
+              <column datatype='string' name='match_id,bandeirante_id,name,street_type,street_name,street,city,uf,state' ordinal='0' />
+            </columns>
+          </relation>
+        </properties>
+      </object>
+    </objects>
+  </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+</datasource>
