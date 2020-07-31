@@ -1,0 +1,7 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+data/input/qualocep/qualocep.csv
+data/raw/qualocep/tabela_integrada.csv
+data/valid/qualocep/qualocep.csv
