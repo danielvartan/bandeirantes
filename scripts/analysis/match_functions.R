@@ -4,7 +4,7 @@
 #'
 #' @description
 #' 
-#' * Version: 1.0.0 2020-07-30
+#' * Version: 1.0.1 2020-07-30
 #' * Style guide: The tidyverse style guide (2019) 
 #'   <https://style.tidyverse.org/>
 #' 
@@ -151,9 +151,9 @@ match_functions <- list (
                     
                 }
                 
-                pb$tick()
-                
             }
+            
+            pb$tick()
             
         }
         
@@ -161,8 +161,8 @@ match_functions <- list (
         
         replacement <- list(
             c("^RAPOSO TAVARES KM$" , "RAPOSO TAVARES"),
-            c("^RAPOSO TAVARES, S/N VIA KM22,140", "RAPOSO TAVARES"),
-            c("^RAPOSO TAVARES, KM" , "RAPOSO TAVARES"),
+            c("^RAPOSO TAVARES, S/N VIA KM22,140$", "RAPOSO TAVARES"),
+            c("^RAPOSO TAVARES, KM$" , "RAPOSO TAVARES"),
             c("^04, S/Nº - ALTURA DA RODOVIA RAPOSO TAVARES KM$", 
               "RAPOSO TAVARES"),
             c("^RAPOSO TAVARES, S/Nº, KM$", 
