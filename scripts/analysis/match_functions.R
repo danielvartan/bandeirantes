@@ -4,7 +4,7 @@
 #'
 #' @description
 #' 
-#' * Version: 1.0.1 2020-07-30
+#' * Version: 1.0.2 2020-08-15
 #' * Style guide: The tidyverse style guide (2019) 
 #'   <https://style.tidyverse.org/>
 #' 
@@ -94,16 +94,15 @@ match_functions <- list (
         
         list2env(data, environment())
         
-        # Aggregate names and variations --------------------
+        # Unlist keywords --------------------
         
-        bandeirante <- bandeirante %>% 
-            unlist_ %>% 
-            mutate(all_names = if_else(is.na(variations), 
-                                       name, 
-                                       paste0(name, ", ", variations))) %>%
-            mutate(all_names = na_if(all_names, "NA"))
+        bandeirante <- bandeirante %>% unlist_
         
         # Compute analysis --------------------
+        
+        ## Filter values
+        
+        bandeirante <- bandeirante %>% filter(criteria == "BCI1")
         
         ## Load progress bar
         
@@ -123,16 +122,17 @@ match_functions <- list (
         output <- qualocep %>% 
             filter(FALSE) %>%
             mutate(bandeirante_id = as.integer(),
+                   criteria = as.character(),
                    name = as.character())
         
         ## Match values
         
         for (i in seq_len(nrow(bandeirante))) {
             
-            all_names <- 
-                str_trim(str_split(bandeirante$all_names[i], ",")[[1]])
+            keyword <- 
+                str_trim(str_split(bandeirante$keyword[i], ",")[[1]])
             
-            for (j in all_names) {
+            for (j in keyword) {
                 
                 ### "^test | test$| test |^test$"
                 pattern <- paste0("^", normalize(j), " ", "|",
@@ -143,7 +143,7 @@ match_functions <- list (
                 match_id <- qualocep %>% 
                     filter(str_detect(normalize(street_name), pattern)) %>%
                     mutate(bandeirante_id = bandeirante$bandeirante_id[i],
-                           name = all_names[1])
+                           name = keyword[1])
 
                 if (!(nrow(match_id) == 0)) {
                     
@@ -192,6 +192,8 @@ match_functions <- list (
             
         }
         
+        # Do not remove this streets in future queries.
+        # This errors must be addressed in the manual selection process.
         remove <- c("DOUTOR", "PROFESSOR", "PREFEITO", "VEREADOR", 
                     "DEPUTADO", "PASTOR", "CONSTRUTOR", "DESEMBARGADOR",
                     "CHOFER", "POLÍCIA MILITAR")
@@ -204,9 +206,9 @@ match_functions <- list (
         }
         
         
-        ### variable "street_name"
-        remove <- c("CARLOS RAPOSO TAVARES",
-                    "PEDRO ÁLVARES CABRAL")
+        # Do not remove this streets in future queries.
+        # This errors must be addressed in the manual selection process.
+        remove <- c("PEDRO ÁLVARES CABRAL")
         
         for (i in remove) {
             
@@ -219,7 +221,7 @@ match_functions <- list (
             distinct(street_type, street_name, city, .keep_all = TRUE) %>%
             mutate(street = paste(street_type, street_name),
                    match_id = as.integer(row_number())) %>%
-            select(match_id, bandeirante_id, name, street_type, 
+            select(match_id, criteria, bandeirante_id, name, street_type, 
                    street_name, street, city, uf, state)
         
         # Return output --------------------

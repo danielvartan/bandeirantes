@@ -1,0 +1,273 @@
+bandeirante_id,criteria,name,document_frequency,instance_frequency,keyword
+1,BCI1,Afonso Dias,5,14,"Afonso Dias, Affonso Dias"
+2,BCI1,Afonso Sardinha,7,26,"Afonso Sardinha, Affonso Sardinha"
+3,BCI1,Aleixo Jorge,3,8,Aleixo Jorge
+4,BCI1,Aleixo Leme,4,5,Aleixo Leme
+5,BCI1,Alonso de Gaia,1,1,Alonso de Gaia
+6,BCI1,Alonso Perez Calhamares,1,1,"Alonso Perez Calhamares, Alonso Peres Calhamares"
+7,BCI1,Alvaro Rodrigues do Prado,5,29,Alvaro Rodrigues do Prado
+8,BCI1,Amador Bueno da Veiga,11,164,"Amador Bueno da Veiga, Amador Bueno"
+9,BCI1,Amaro Gauto,2,3,Amaro Gauto
+10,BCI1,André de Escudeiro,1,1,André de Escudeiro
+11,BCI1,André de Frias Taveira,2,6,André de Frias Taveira
+12,BCI1,André de Leão,6,21,"André de Leão, Andre Leão"
+13,BCI1,André de Zunega,4,19,André de Zunega
+14,BCI1,André Fernandes,9,38,André Fernandes
+15,BCI1,Antão Leme da Silva,1,2,"Antão Leme da Silva, Antão Leme"
+16,BCI1,Antonio Bicudo,6,23,Antonio Bicudo
+17,BCI1,Antonio Castanho da Silva,9,25,"Antonio Castanho da Silva, Antonio Castanho"
+18,BCI1,Antonio Castilho,1,1,Antonio Castilho
+19,BCI1,Antonio de Almeida Lara,4,16,"Antonio de Almeida Lara, Antonio de Almeida"
+20,BCI1,Antonio de Andrade,2,5,Antonio de Andrade
+21,BCI1,Antonio Dias Adorno,2,5,Antonio Dias Adorno
+22,BCI1,Antonio Dias de Oliveira,2,2,Antonio Dias de Oliveira
+23,BCI1,Antonio Domingues,5,12,Antonio Domingues
+24,BCI1,Antonio Gonçalves Davíde,1,1,Antonio Gonçalves Davíde
+25,BCI1,Antonio Luiz Grou,1,1,"Antonio Luiz Grou, Antonio Luis Grou"
+26,BCE2,Antonio Nunes,7,34,Antonio Nunes
+27,BCI1,Antonio Nunes Pinto,4,18,Antonio Nunes Pinto
+28,BCI1,Antonio Pedroso de Alvarenga,8,29,Antonio Pedroso de Alvarenga
+29,BCI1,Antonio Pedroso de Barros,9,50,Antonio Pedroso de Barros
+30,BCE2,Antonio Pereira,9,48,Antonio Pereira
+31,BCE2,Antonio Pinto,4,11,Antonio Pinto
+32,BCI1,Antonio Pires de Campos,9,51,"Antonio Pires de Campos, Pay Pirá"
+33,BCI1,Antonio Raposo Tavares,10,224,"Antonio Raposo Tavares, Raposo Tavares"
+34,BCI1,Antonio Rodrigues Velho ,2,4,"Antonio Rodrigues Velho , Araá"
+35,BCI1,Antonio Salema,2,2,Antonio Salema
+36,BCI1,Antonio Soares Ferreira,2,5,Antonio Soares Ferreira
+37,BCI1,Antonio Soares Paes,3,6,"Antonio Soares Paes, Antonio Soares Pais"
+38,BCI1,Antonio Zouro del Toro,1,1,"Antonio Zouro del Toro, Antonio Zouro"
+39,BCI1,Arthur de Sá e Menezes,6,37,"Arthur de Sá e Menezes, Artur de Sá e Menezes, Arthur de Sá, Artur de Sá"
+40,BCI1,Artur Pais de Barros,1,1,Artur Pais de Barros
+41,BCI1,Ascenço Luiz Grou,1,2,"Ascenço Luiz Grou, Ascenço Luis Grou"
+42,BCI1,Ascenço Ribeiro,1,5,Ascenço Ribeiro
+43,BCI1,Aspilcueta Navarro,2,3,Aspilcueta Navarro
+44,BCI1,Balthazar de Godoy,5,9,"Balthazar de Godoy, Baltazar de Godoy"
+45,BCI1,Balthazar Fernandes,5,10,"Balthazar Fernandes, Baltazar Fernandes"
+46,BCI1,Balthazar Gonçalves,4,17,"Balthazar Gonçalves, Baltazar Gonçalves"
+47,BCI1,Bartolomeu Bueno da Silva,9,176,"Bartolomeu Bueno da Silva, Anhanguera, Bartholomeu Bueno da Silva"
+48,BCI1,Bartolomeu Pais de Abreu,3,22,"Bartolomeu Pais de Abreu, Bartolomeu Paes de Abreu, Bartholomeu Paes de Abreu"
+49,BCI1,Belchior de Pontes,4,13,Belchior de Pontes
+50,BCI1,Belchior Dias Carneiro,3,8,"Belchior Dias Carneiro, Belchior Dias"
+51,BCI1,Belchior Dias Moreya,2,20,"Belchior Dias Moreya, Melchior Dias Moreya, Melchior Dias Moreia, Melchior Dias, Belchior Dias"
+52,BCI1,Bento Fernandes,4,29,Bento Fernandes
+53,BCI1,Bento Pires Ribeiro,6,20,Bento Pires Ribeiro
+54,BCI1,Bernardo Soares de Proença,1,3,Bernardo Soares de Proença
+55,BCI1,Braz Cubas,6,22,"Braz Cubas, Bras Cubas"
+56,BCI1,Braz Esteves Leme,4,12,Braz Esteves Leme
+57,BCI1,Braz Gonçalves,5,40,Braz Gonçalves
+58,BCI1,Braz Leme,2,2,"Braz Leme, Bras Leme"
+59,BCI1,Braz Mendes Paes,1,4,Braz Mendes Paes
+60,BCI1,Braz Rodrigues de Arzão,7,31,Braz Rodrigues de Arzão
+61,BCI1,Bruza de Espinosa,1,1,Bruza de Espinosa
+62,BCI1,Campos Bicudo,7,51,Campos Bicudo
+63,BCI1,Carlos Pedroso da Silveira,4,7,Carlos Pedroso da Silveira
+64,BCI1,Chrisostomo Alvarez,1,1,Chrisostomo Alvarez
+65,BCI1,Christovam de Aguiar,2,5,"Christovam de Aguiar, Crstovão de Aguiar"
+66,BCI1,Christovam de Mendonça,3,9,"Christovam de Mendonça, Cristovão de Mendoza, Cristovão de Mendonça"
+67,BCI1,Clemente Alvares,6,19,Clemente Alvares
+68,BCI1,Cristóvão Pereira de Abreu,2,4,"Cristóvão Pereira de Abreu, Cristovão Pereira"
+69,BCI1,Diogo Barbosa do Rego,1,2,Diogo Barbosa do Rego
+70,BCI1,Diogo Cão,2,4,Diogo Cão
+71,BCI1,Diogo de Oliveira Gago,1,1,Diogo de Oliveira Gago
+72,BCI1,Diogo de Onhatte,1,1,Diogo de Onhatte
+73,BCI1,Diogo de Quadros,5,16,Diogo de Quadros
+74,BCI1,Diogo Fernandes,4,5,Diogo Fernandes
+75,BCI1,Diogo Martins,4,10,Diogo Martins
+76,BCI1,Diogo Martins Cão,2,4,Diogo Martins Cão
+77,BCI1,Diogo Martins Machuca,1,1,Diogo Martins Machuca
+78,BCI1,Diogo Ramires,1,1,Diogo Ramires
+79,BCI1,Diogo Teixeira de Carvalho,1,1,Diogo Teixeira de Carvalho
+80,BCI1,Domingos Barbosa Calheiros,8,43,Domingos Barbosa Calheiros
+81,BCI1,Domingos Cordeiro,3,10,Domingos Cordeiro
+82,BCI1,Domingos de Brito Peixoto,3,4,Domingos de Brito Peixoto
+83,BCI1,Domingos Dias,7,24,Domingos Dias
+84,BCI1,Domingos do Prado,5,17,Domingos do Prado
+85,BCI1,Domingos Fernandes,6,8,Domingos Fernandes
+86,BCI1,Domingos Gonçalves,2,6,Domingos Gonçalves
+87,BCI1,Domingos Jorge Velho,10,243,"Domingos Jorge Velho, Jorge Velho"
+88,BCI1,Domingos Marques Requeixo,1,1,Domingos Marques Requeixo
+89,BCI1,Domingos Pereda,1,1,Domingos Pereda
+90,BCI1,Domingos Rodrigues de Carvalho,5,21,Domingos Rodrigues de Carvalho
+91,BCI1,Domingos Rodrigues do Prado,3,19,Domingos Rodrigues do Prado
+92,BCI1,Domingos Rodrigues Velho,2,2,Domingos Rodrigues Velho
+93,BCI1,Duarte Machado,2,2,Duarte Machado
+94,BCI1,Estevam Martins,1,1,Estevam Martins
+95,BCI1,Estevam Raposo,2,6,"Estevam Raposo, Estevão Raposo Bocarro, Estevão Raposo, Estevam Raposo Bocarro"
+96,BCI1,Estevam Ribeiro Bayão Parente,6,36,"Estevam Ribeiro Bayão Parente, Estevão Ribeiro Baião Parente, Estevão Ribeiro Baião, Estevam Ribeyro Bayam Parente, Estevão Bayão, Estevão Ribeiro Bayão"
+97,BCI1,Felippe de Véres,1,1,Felippe de Véres
+98,BCI1,Fernando de Camargo,9,25,"Fernando de Camargo, Jaguaretê, Fernão de Camargo, o Tigre"
+99,BCI1,Fernando de Lencastre,2,16,Fernando de Lencastre
+100,BCI1,Fernão Carrilho,2,11,Fernão Carrilho
+101,BCI1,Fernão Dias Falcão,4,16,Fernão Dias Falcão
+102,BCI1,Fernão Dias Paes Leme,11,305,"Fernão Dias Paes Leme, Fernão Dias, Paes Leme, Fernão Paes Leme, Pais Leme, Fernão Pais Leme, Pais Leme, Fernão Dias Pais Leme"
+103,BCI1,Fernão Paes de Barros,8,37,"Fernão Paes de Barros, Paes de Barros, Fernão Pais de Barros"
+104,BCI1,Francisco Alvarenga,1,1,Francisco Alvarenga
+105,BCI1,Francisco Alvares Correia,1,1,Francisco Alvares Correia
+106,BCI1,Francisco Bueno,5,31,Francisco Bueno
+107,BCI1,Francisco da Gama,3,8,Francisco da Gama
+108,BCE2,Francisco de Almeida,5,12,Francisco de Almeida
+109,BCI1,Francisco de Baldim,1,1,Francisco de Baldim
+110,BCI1,Francisco de Brito Peixoto,1,3,Francisco de Brito Peixoto
+111,BCI1,Francisco de Paiva,5,9,Francisco de Paiva
+112,BCI1,Francisco de Proença,6,11,Francisco de Proença
+113,BCI1,Francisco de Siqueira,3,5,Francisco de Siqueira
+114,BCI1,Francisco Dias de Avila,5,69,"Francisco Dias de Avila, Francisco Dias d'Avila"
+115,BCI1,Francisco Dias de Siqueira,4,22,Francisco Dias de Siqueira
+116,BCI1,Francisco Dias Pinto,1,1,Francisco Dias Pinto
+117,BCI1,Francisco Dias Velho,7,19,Francisco Dias Velho
+118,BCI1,Francisco Duarte,2,3,Francisco Duarte
+119,BCI1,Francisco Farel,1,1,Francisco Farel
+120,BCE2,Francisco Ferreira,1,1,Francisco Ferreira
+121,BCI1,Francisco Leme do Prado,2,4,Francisco Leme do Prado
+122,BCI1,Francisco Nunes Cubas,2,5,Francisco Nunes Cubas
+123,BCI1,Francisco Pedroso Xavier,7,83,Francisco Pedroso Xavier
+124,BCE2,Francisco Pereira,4,9,Francisco Pereira
+125,BCI1,Francisco Prelo,1,1,Francisco Prelo
+126,BCI1,Francisco Ribeiro de Moraes,3,13,"Francisco Ribeiro de Moraes, Francisco Ribeiro de Morais"
+127,BCI1,Francisco Roiz da Guerra,1,2,Francisco Roiz da Guerra
+128,BCI1,Gabriel Antunes Maciel,3,16,Gabriel Antunes Maciel
+129,BCI1,Gabriel de Lara,5,13,Gabriel de Lara
+130,BCI1,Gabriel Soares,8,49,Gabriel Soares
+131,BCI1,Garcia Rodrigues Paes,4,35,"Garcia Rodrigues Paes, Garcia Rodrigues Pais"
+132,BCI1,Garcia Rodrigues Velho,5,8,Garcia Rodrigues Velho
+133,BCI1,Gaspar Collaço Villela,1,1,Gaspar Collaço Villela
+134,BCI1,Gaspar de Godoy Collaço,4,17,Gaspar de Godoy Collaço
+135,BCI1,Gaspar dos Reis,2,2,Gaspar dos Reis
+136,BCI1,Geraldo Correia,1,2,"Geraldo Correia, Geraldo Corrêa"
+137,BCI1,Gonçalo Gil,1,1,Gonçalo Gil
+138,BCI1,Heliodóro Eobanos,3,9,Heliodóro Eobanos
+139,BCI1,Henrique da Cunha,7,28,Henrique da Cunha
+140,BCI1,Henrique da Cunha Gago,4,9,"Henrique da Cunha Gago, Cunha Gago"
+141,BCI1,Jeronymo Bueno,5,21,"Jeronymo Bueno, Jeronimo Bueno"
+142,BCI1,Jeronymo da Veiga,4,11,"Jeronymo da Veiga, Jeronimo da Veiga"
+143,BCI1,Jeronymo Gonçalves,1,1,"Jeronymo Gonçalves, Jeronimo Gonçalves Meira"
+144,BCI1,Jeronymo Leitão,3,9,"Jeronymo Leitão, Jeronimo Leitão"
+145,BCI1,Jeronymo Pedroso de Barros,3,7,"Jeronymo Pedroso de Barros, Jeronimo Pedroso de Barros, Jeronimo Pedroso, Jeronimo de Barros"
+146,BCI1,João Amaro Maciel Parente,7,166,João Amaro Maciel Parente
+147,BCI1,João Antunes Maciel,2,10,João Antunes Maciel
+148,BCI1,João Bernal,1,1,João Bernal
+149,BCI1,João Coelho de Sousa,3,3,"João Coelho de Sousa, João Coelho de Souza"
+150,BCI1,João Correia de Sá,4,13,"João Correia de Sá, João Correa de Sá"
+151,BCI1,João de Faria Fialho,1,4,João de Faria Fialho
+152,BCI1,João de Santanna,1,1,João de Santanna
+153,BCI1,João de Sousa de Azevedo,1,6,João de Sousa de Azevedo
+154,BCI1,João do Prado,8,22,João do Prado
+155,BCE3,João Fernandes,8,26,João Fernandes
+156,BCI1,João Gago da Cunha,4,7,João Gago da Cunha
+157,BCE2,João Jorge,1,1,João Jorge
+158,BCI1,João Leite da Silva Ortiz,4,20,João Leite da Silva Ortiz
+159,BCI1,João Mendes Geraldo,3,7,João Mendes Geraldo
+160,BCE2,João Moreira,4,4,João Moreira
+161,BCI1,João Morzelho,1,1,João Morzelho
+162,BCI1,João Paes,5,31,"João Paes, João Pais"
+163,BCI1,João Pedroso de Moraes,1,4,"João Pedroso de Moraes, Pedroso de Moraes, João Pedroso de Morais"
+164,BCI1,João Pereira de Sousa Botafogo,2,8,João Pereira de Sousa Botafogo
+165,BCI1,João Ramalho,8,78,João Ramalho
+166,BCI1,João Raposo Bocarro,5,18,"João Raposo Bocarro, João Raposo"
+167,BCI1,João Velho do Valle,1,7,João Velho do Valle
+168,BCI1,Jorge Correia,3,17,"Jorge Correia, Jorge Correa"
+169,BCI1,Jorge Rodrigues,5,9,Jorge Rodrigues
+170,BCI1,Jorge Soares de Macedo,5,56,Jorge Soares de Macedo
+171,BCI1,José Dias Paes,1,6,"José Dias Paes, José Dias Pais"
+172,BCI1,José Gaspar Sanches,1,1,José Gaspar Sanches
+173,BCI1,Lazaro da Costa,6,16,Lazaro da Costa
+174,BCI1,Leme da Silva,4,20,Leme da Silva
+175,BCI1,Lourenço Cabreira,1,1,Lourenço Cabreira
+176,BCI1,Lourenço Castanho Taques,8,34,Lourenço Castanho Taques
+177,BCI1,Lourenço da Costa,2,2,Lourenço da Costa
+178,BCI1,Lourenço Gomes de Ruxaque,1,1,Lourenço Gomes de Ruxaque
+179,BCI1,Lourenço Nunes,2,2,Lourenço Nunes
+180,BCI1,Lourenço Rabelo,1,1,Lourenço Rabelo
+181,BCI1,Luiz Castanho de Almeida,3,18,"Luiz Castanho de Almeida, Luis Castanho de Almeida"
+182,BCI1,Luiz Delgado,1,1,"Luiz Delgado, Luis Delgado"
+183,BCI1,Luiz Eanes Grou,1,2,Luiz Eanes Grou
+184,BCE2,Luiz Martins,2,3,"Luiz Martins, Luis Martins"
+185,BCI1,Luiz Pedroso de Barros,9,30,"Luiz Pedroso de Barros, Luis Pedroso de Barros"
+186,BCI1,Manoel Alvares de Moraes Navarro,4,183,Manoel Alvares de Moraes Navarro
+187,BCI1,Manoel Cardoso de Almeida,2,3,"Manoel Cardoso de Almeida, Cardoso de Almeida"
+188,BCI1,Manoel Dias da Silva,1,1,"Manoel Dias da Silva, Manuel Dias da Silva"
+189,BCI1,Manoel Lobo,4,23,"Manoel Lobo, Manuel Lobo"
+190,BCI1,Manuel Affonso,5,13,"Manuel Affonso, Manuel Affonso Gaya, Manuel Afonso Gaia, Manuel Afonso Gaya, Manuel Affonso Gaia, Manuel Affonso de Gaya"
+191,BCI1,Manuel Chaves,3,3,"Manuel Chaves, Manoel de Chaves"
+192,BCI1,Manuel Correia,4,20,"Manuel Correia, Manuel Correa, Manoel Correia, Manoel Correa"
+193,BCI1,Manuel da Borba Gato,7,33,"Manuel da Borba Gato, Borba Gato, Manuel de Borba Gato"
+194,BCI1,Manuel da Fonseca,7,10,Manuel da Fonseca
+195,BCI1,Manuel de Campos Bicudo,7,38,"Manuel de Campos Bicudo, Manoel de Campos, Manoel de Campos Bicudo"
+196,BCI1,Manuel de Oliveira,3,4,Manuel de Oliveira
+197,BCI1,Manuel de Soveral,1,1,Manuel de Soveral
+198,BCI1,Manuel Dias da Silva ,6,42,"Manuel Dias da Silva , Bixira"
+199,BCI1,Manuel Felix de Lima,1,6,Manuel Felix de Lima
+200,BCI1,Manuel Fernandes Ramos,5,6,Manuel Fernandes Ramos
+201,BCI1,Manuel Gonçalves,7,19,Manuel Gonçalves
+202,BCI1,Manuel Lourenço de Andrade,2,2,Manuel Lourenço de Andrade
+203,BCI1,Manuel Mendes Allemão,1,1,"Manuel Mendes Allemão, Manoel Mendes"
+204,BCI1,Manuel Nunes Viana,2,38,Manuel Nunes Viana
+205,BCI1,Manuel Paes,5,14,Manuel Paes
+206,BCI1,Manuel Preto,9,78,"Manuel Preto, Manoel Preto"
+207,BCI1,Manuel Requeixo,2,2,Manuel Requeixo
+208,BCI1,Manuel Ribeiro Boito,1,1,Manuel Ribeiro Boito
+209,BCI1,Manuel Rodrigues,6,41,Manuel Rodrigues
+210,BCI1,Manuel Soeiro,2,2,Manuel Soeiro
+211,BCI1,Marcos de Azeredo,4,27,Marcos de Azeredo
+212,BCI1,Martim Carvalho,3,8,Martim Carvalho
+213,BCI1,Martim de Sá,5,30,Martim de Sá
+214,BCI1,Martim do Prado,2,4,Martim do Prado
+215,BCI1,Martim Rodrigues Tenorio de Aguiar,8,32,Martim Rodrigues Tenorio de Aguiar
+216,BCI1,Martin Fernandes,5,8,Martin Fernandes
+217,BCI1,Matheus Gomes,1,1,Matheus Gomes
+218,BCI1,Matheus Luiz Grou,5,10,"Matheus Luiz Grou, Matheus Grou, Mateus Luis Grou"
+219,BCI1,Matheus Neto,1,2,Matheus Neto
+220,BCI1,Mathias Cardoso,9,293,"Mathias Cardoso, Matias Cardoso"
+221,BCI1,Mathias Gomes,1,3,Mathias Gomes
+222,BCI1,Melchior de tal,1,1,Melchior de tal
+223,BCI1,Miguel de Almeida de Miranda,1,1,Miguel de Almeida de Miranda
+224,BCI1,Miguel Gonçalves Correia,1,2,"Miguel Gonçalves Correia, Miguel Gonçalves Correa"
+225,BCI1,Miguel Sutil,2,5,Miguel Sutil
+226,BCI1,Nicolau Barreto,8,64,Nicolau Barreto
+227,BCI1,Nicolau Machado,1,1,Nicolau Machado
+228,BCI1,Paschoal Delgado,2,2,"Paschoal Delgado, Pascoal Delgado"
+229,BCI1,Paschoal Leite Furtado,1,1,Paschoal Leite Furtado
+230,BCI1,Pascoal Moreira Cabral,6,59,"Pascoal Moreira Cabral, Paschoal Moreira Cabral"
+231,BCI1,Paulo Guimarães,1,1,Paulo Guimarães
+232,BCE2,Paulo Rodrigues,5,8,Paulo Rodrigues
+233,BCE3,Pedro Alvares,7,17,Pedro Alvares
+234,BCI1,Pedro de Araujo,2,2,Pedro de Araujo
+235,BCI1,Pedro Leme da Silva,7,45,Pedro Leme da Silva
+236,BCI1,Pedro Sardinha,4,13,Pedro Sardinha
+237,BCI1,Pedro Vaz de Barros,9,61,"Pedro Vaz de Barros, Pedro Vas de Barros, Pero Vaz de Barros"
+238,BCI1,Pero da Silva,2,5,Pero da Silva
+239,BCI1,Pero de Araujo,6,16,Pero de Araujo
+240,BCI1,Pero Domingues,4,11,Pero Domingues
+241,BCI1,Pero Martins,1,1,Pero Martins
+242,BCI1,Pero Nunes,3,4,Pero Nunes
+243,BCI1,Raphael de Proença,1,1,Raphael de Proença
+244,BCI1,Raphael Dias,4,4,"Raphael Dias, Rafael Dias"
+245,BCI1,Rodrigo César de Meneses,3,32,Rodrigo César de Meneses
+246,BCI1,Rodrigo de Castél Branco,3,4,Rodrigo de Castél Branco
+247,BCI1,Romão Freire,1,2,Romão Freire
+248,BCI1,Salvador Fernandes Furtado de Mendonça,2,3,Salvador Fernandes Furtado de Mendonça
+249,BCI1,Salvador Marecos,3,5,Salvador Marecos
+250,BCI1,Salvador Pires de Medeiros,2,5,Salvador Pires de Medeiros
+251,BCI1,Sebastião Alvares,2,2,Sebastião Alvares
+252,BCI1,Sebastião de Freitas,5,12,Sebastião de Freitas
+253,BCI1,Sebastião Fernandes Camacho,4,9,Sebastião Fernandes Camacho
+254,BCI1,Sebastião Fernandes do Rêgo,2,17,Sebastião Fernandes do Rêgo
+255,BCI1,Sebastião Fernandes Tourinho,4,11,Sebastião Fernandes Tourinho
+256,BCI1,Sebastião Leme,2,8,Sebastião Leme
+257,BCI1,Sebastião Marinho,3,7,Sebastião Marinho
+258,BCI1,Sebastião Paes de Barros,4,22,Sebastião Paes de Barros
+259,BCI1,Sebastião Pinheiro Raposo,3,7,Sebastião Pinheiro Raposo
+260,BCI1,Sebastião Pires Caleira,1,1,Sebastião Pires Caleira
+261,BCI1,Sebastião Preto,7,25,Sebastião Preto
+262,BCI1,Silva Braga,2,13,Silva Braga
+263,BCI1,Simão Álvares,3,8,Simão Álvares
+264,BCI1,Simão Borges de Cerqueira,3,6,Simão Borges de Cerqueira
+265,BCI1,Simão Fernandes,1,1,Simão Fernandes
+266,BCI1,Simão Leitão,1,2,Simão Leitão
+267,BCI1,Tristão de Oliveira,4,6,Tristão de Oliveira
+268,BCI1,Valentim de Barros,6,24,Valentim de Barros
+269,BCI1,Vasco da Motta,2,5,Vasco da Motta
+270,BCI1,Vasco Rodrigues Caldas,3,4,Vasco Rodrigues Caldas
+271,BCI1,Vicente Alvares,1,1,Vicente Alvares
+272,BCI1,Vicente Bicudo,3,5,Vicente Bicudo

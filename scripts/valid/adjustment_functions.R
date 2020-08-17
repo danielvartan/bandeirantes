@@ -4,7 +4,7 @@
 #'
 #' @description
 #' 
-#' * Version: 1.0.0 2020-07-30
+#' * Version: 1.1.0 2020-08-16
 #' * Style guide: The tidyverse style guide (2019) 
 #'   <https://style.tidyverse.org/>
 #' 
@@ -39,6 +39,47 @@ adjustment_functions <- list(
         require(magrittr)
         require(dplyr)
 
+        # Check values --------------------
+        
+        for (i in c("data")) {
+            
+            if (!(is.data.frame(get(i)))) {
+                
+                stop(paste(i, "is not a data frame"))
+                
+            }
+            
+        }
+        
+        # Adjust values --------------------
+        
+        output <- data
+        
+        # Fine adjustments --------------------
+        
+        # Reorder variables --------------------
+        
+        # Return output --------------------
+        
+        output
+        
+    },
+    
+    #' Adjust values of the match input dataset
+    #'
+    #' @param data A tibble with the input dataset.
+    #' 
+    #' @return A tibble.
+    #' 
+    #' @noRd
+    
+    match = function(data) {
+        
+        # Load packages --------------------
+        
+        require(magrittr)
+        require(dplyr)
+        
         # Check values --------------------
         
         for (i in c("data")) {

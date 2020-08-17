@@ -4,7 +4,7 @@
 #'
 #' @description
 #' 
-#' * Version: 1.0.0 2020-07-30
+#' * Version: 1.1.0 2020-08-16
 #' * Style guide: The tidyverse style guide (2019) 
 #'   <https://style.tidyverse.org/>
 #' 
@@ -49,7 +49,7 @@ processing_functions <- list(
     #' * If return_data is TRUE and dataset is "all" or length > 1, returns 
     #'   a list with tibbles
     #' * If write_data is TRUE, write a RData and csv file for all datasets 
-    #'   in dataset
+    #'   in dataset variable
     #' 
     #' @details
     #' 
@@ -76,8 +76,12 @@ processing_functions <- list(
         # Set parameters --------------------
         
         source_files <- list(
-            auxiliary_functions = "./scripts/auxiliary/auxiliary_functions.R",
-            tidy_functions = "./scripts/input/tidy_functions.R")
+            auxiliary_functions = paste0(".",
+                                         "/scripts/auxiliary/",
+                                         "auxiliary_functions.R"),
+            tidy_functions = paste0(".",
+                                    "/scripts/input/",
+                                    "tidy_functions.R"))
         
         raw_paths <- list(
             bandeirante = paste0(".",
@@ -622,7 +626,7 @@ processing_functions <- list(
 
     },
     
-    #' Process and creates the analysis datasets
+    #' Process and creates the pre_analysis datasets
     #'
     #' @param return_data A logic value indicating if the function must
     #'   return the output data.
@@ -631,8 +635,11 @@ processing_functions <- list(
     #'
     #' @return
     #' 
-    #' * If return_data is TRUE, returns a list with tibbles
-    #' * If write_date is TRUE, write several RData and csv files
+    #' * If return_data is TRUE and dataset is length 1, returns a tibble
+    #' * If return_data is TRUE and dataset is "all" or length > 1, returns 
+    #'   a list with tibbles
+    #' * If write_data is TRUE, write a RData and csv file for all datasets 
+    #'   in dataset variable
     #' 
     #' @details
     #' 
@@ -647,8 +654,8 @@ processing_functions <- list(
     #' 
     #' @noRd
     
-    analisys_data = function(return_data = TRUE,
-                             write_data = TRUE) {
+    pre_analysis = function(return_data = TRUE,
+                            write_data = TRUE) {
         
         # Load packages --------------------
         
@@ -682,7 +689,9 @@ processing_functions <- list(
         # Set parameters --------------------
         
         source_files <- list(
-            auxiliary_functions = "./scripts/auxiliary/auxiliary_functions.R",
+            auxiliary_functions = paste0(".",
+                                         "/scripts/auxiliary/",
+                                         "auxiliary_functions.R"),
             match_functions = paste0(".",
                                      "/scripts/analysis/",
                                      "match_functions.R"))
@@ -695,9 +704,9 @@ processing_functions <- list(
                               "/data/valid/qualocep/",
                               "qualocep.RData"))
         
-        analysis_paths <- list(
-            match = paste0(".",
-                           "/data/analysis/match/"))
+        pre_analysis_paths <- list(
+            pre_match = paste0(".",
+                               "/data/analysis/pre_match/"))
         
         # Source functions --------------------
         
@@ -719,13 +728,186 @@ processing_functions <- list(
         
         message(paste0("\n",
                        "Matching bandeirantes names with qualocep street",
-                       "names. ",
+                       " names. ",
                        "This may take a while."))
         
-        match_data <- list("bandeirante" = bandeirante, 
+        pre_match_data <- list("bandeirante" = bandeirante, 
                            "qualocep" = qualocep)
         
-        match <- match_functions$main(match_data)
+        pre_match <- match_functions$main(pre_match_data)
+        
+        # Write data --------------------
+        
+        if (isTRUE(write_data)) {
+            
+            for (i in names(pre_analysis_paths)) {
+                
+                if (!(str_extract(pre_analysis_paths[[i]], ".$") == "/")) {
+                    
+                    pre_analysis_paths[[i]] <- paste0(
+                        pre_analysis_paths[[i]], "/")
+                    
+                }
+                
+                ## Prepare csv output
+                
+                unlist_ <- auxiliary_functions$unlist_
+                
+                output_csv <- get(i) %>% unlist_()
+                
+                ## Write data
+                
+                output_csv %>% 
+                    write_delim(paste0(pre_analysis_paths[[i]], i, ".csv"), 
+                                delim = ",",
+                                col_names = TRUE)
+                
+                get(i) %>% saveRDS(paste0(pre_analysis_paths[[i]], i, ".RData"))   
+                
+            }
+            
+        }
+        
+        # Return output --------------------
+        
+        if (isTRUE(return_data)) {
+            
+            if (length(pre_analysis_paths) == 1 & isTRUE(return_data)) {
+                
+                return(get(names(pre_analysis_paths)))
+                
+            } else {
+                
+                output <- vector(mode = "list", length = 0)
+                
+                for (i in names(pre_analysis_paths)) {
+                    
+                    output[[i]] <- get(i)
+                    
+                }
+                
+                return(output)
+                
+            }
+            
+        }
+        
+    },
+    
+    #' Process and creates the analysis datasets
+    #'
+    #' @param return_data A logic value indicating if the function must
+    #'   return the output data.
+    #' @param write_data A logic value indicating if the function must 
+    #'   write the output data.
+    #'
+    #' @return
+    #' 
+    #' * If return_data is TRUE and dataset is length 1, returns a tibble
+    #' * If return_data is TRUE and dataset is "all" or length > 1, returns 
+    #'   a list with tibbles
+    #' * If write_data is TRUE, write a RData and csv file for all datasets 
+    #'   in dataset variable
+    #' 
+    #' @details
+    #' 
+    #' * Set the working directory to the project's root directory
+    #' * This function requires the auxiliary_functions.R list of 
+    #'   functions
+    #' * This function requires the tidy_functions.R list of 
+    #'   functions
+    #' * This function requires the adjustment_functions.R list of 
+    #'   functions
+    #' * This function requires the validation_functions.R list of 
+    #'   functions
+    #' * The output paths are preconfigured.
+    #' 
+    #' @noRd
+    
+    analysis = function(return_data = TRUE,
+                        write_data = TRUE) {
+        
+        # Load packages --------------------
+        
+        require(magrittr)
+        require(dplyr)
+        require(readr)
+        require(stringr)
+        
+        # Check arguments --------------------
+        
+        for (i in c("return_data", "write_data")) {
+            
+            if (!(is.logical(get(i)))) {
+                
+                stop(paste(i, "value is not logical"))
+                
+            }
+        }
+        
+        if (isFALSE(return_data) &&
+            isFALSE(write_data)) {
+            
+            stop(paste("What you want to do champ?", 
+                       "return_data and write_data can't both be FALSE!",
+                       "Help me out here."))
+            
+        }
+        
+        
+        # Set parameters --------------------
+        
+        source_files <- list(
+            auxiliary_functions = paste0(".",
+                                         "/scripts/auxiliary/",
+                                         "auxiliary_functions.R"),
+            tidy_functions = paste0(".",
+                                    "/scripts/input/",
+                                    "tidy_functions.R"),
+            adjustment_functions = paste0(".",
+                                          "/scripts/valid/",
+                                          "adjustment_functions.R"),
+            validation_functions = paste0(".",
+                                          "/scripts/valid/",
+                                          "validation_functions.R"))
+        
+        raw_paths <- list(
+            match = paste0(".",
+                           "/data/raw/match/"))
+        
+        analysis_paths <- list(
+            match = paste0(".",
+                           "/data/analysis/",
+                           "match/"))
+        
+        # Source functions --------------------
+        
+        for (i in names(source_files)) {
+            
+            source(source_files[[i]], local = TRUE, encoding = "UTF-8")
+            
+        }
+        
+        # Finish pre_match analisys data --------------------
+        
+        ## Tidy match data
+        
+        wd <- getwd()
+        setwd(raw_paths$match)
+        
+        file <- str_subset(dir(), ".csv$")
+        match <- tidy_functions$match(file = file)
+        
+        setwd(wd)
+        
+        ## Adjust and validate match data
+        
+        match <- adjustment_functions$match(data = match)
+        match <- validation_functions$main(data = match)
+        
+        ## Filter match data
+        
+        match <- match %>% filter(criteria == "LCI1")
         
         # Write data --------------------
         
@@ -735,7 +917,8 @@ processing_functions <- list(
                 
                 if (!(str_extract(analysis_paths[[i]], ".$") == "/")) {
                     
-                    analysis_paths[[i]] <- paste0(analysis_paths[[i]], "/")
+                    analysis_paths[[i]] <- paste0(
+                        analysis_paths[[i]], "/")
                     
                 }
                 
@@ -812,9 +995,12 @@ processing_functions <- list(
         # Set parameters --------------------
         
         analysis_files <- list(
+            pre_match = paste0(".",
+                               "/data/analysis/pre_match/",
+                               "pre_match.RData"),
             match = paste0(".",
-                                 "/data/analysis/match/",
-                                 "match.RData"))
+                           "/data/analysis/match/",
+                           "match.RData"))
         
         # Check arguments --------------------
         

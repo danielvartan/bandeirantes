@@ -4,7 +4,7 @@
 #' 
 #' @description
 #' 
-#' * Version: 1.0.2 2020-05-10
+#' * Version: 1.0.3 2020-08-16
 #' * Style guide: The tidyverse style guide (2019) 
 #'   <https://style.tidyverse.org/>
 #' 
@@ -293,7 +293,9 @@ auxiliary_functions <- list(
     },
     
     unlist_ = function(data) {
-
+        
+        require(dplyr)
+        
         level_1 = function(x) {
             
             level_2 = function(y) {
