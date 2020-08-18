@@ -1,7 +1,7 @@
 # Bandeirantes
 
-Projeto: Levantamento e análise de logradouros associados a nomes de bandeirantes no Brasil
+Project: survey and analysis of streets associated with names of bandeirantes in Brazil
 
-Período de operação: 01/07/2020 a 31/08/2020
+Period of operation: 2020/07/01 a 2020/08/31/
 
-Status: `EM ANDAMENTO`
+Status: `IN PROGRESS`
